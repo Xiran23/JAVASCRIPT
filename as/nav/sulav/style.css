@@ -1,0 +1,91 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navlink {
+    text-decoration: none;
+    color: black;
+}
+
+.logo img {
+    border-radius: 50%;
+    height: 80px;
+}
+
+.logo img:hover {
+    opacity: 0.75;
+}
+
+li {
+    list-style: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 40px;
+}
+
+ul {
+    align-items: center;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+.navlink:hover {
+    color: white;
+    background-color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search form input {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.search img {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-inline: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-inline: 40px;
+    margin-top: 30px;
+
+}
+
+
+
+.content img {
+    width: 60vw;
+}
+
+.content .side {
+    border: 1px solid black;
+    padding: 20px;
+    transition: background-color 500ms, color 500ms, border-top-left-radius 500ms, border-bottom-right-radius 500ms;
+}
+
+.content .side:hover {
+    background-color: black;
+    color: white;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.content .side h1 {
+    text-align: center;
+}%

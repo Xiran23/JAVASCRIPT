@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="stylee.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="png-2709031_1280.png" alt="Logo" style="width: 70px" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#" class="navs" style="">Home</a></li>
+          <li><a href="#" class="navs" style="">About</a></li>
+          <li><a href="#" class="navs" style="">Services</a></li>
+          <li><a href="#" class="navs" style="">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="search">
+        <input type="text" placeholder="Search..." />
+        <button>Search</button>
+      </div>
+    </header>
+    <main>
+      <div class="slider">
+        <img src="img.jpg" alt="" />
+      </div>
+      <div class="sidebar">
+        <p>Lorem ipsum dolor sit amet consectetur,</p>
+      </div>
+    </main>
+    <div class="container">
+      <div class="h">
+        <h2>Post 1</h2>
+        <div class="post">
+          <img src="img.jpg" alt="" />
+          <div class="arrow">
+            <a href=""> <img src="arr.png" alt="" class="right" /></a>
+            <a href=""> <img src="arrow.png" alt="" class="right" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="h">
+        <h2>Post 2</h2>
+        <div class="post">
+          <img src="img.jpg" alt="" />
+          <div class="row">
+            <a href=""> <img src="arr.png" alt="" class="right" /></a>
+            <a href=""> <img src="arrow.png" alt="" class="right" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="h">
+        <h2>Post 3</h2>
+        <div class="post">
+          <img src="img.jpg" alt="" />
+          <div class="arr">
+            <a href="">
+              <img
+                src="reshot-icon-arrow-right-ZP2WDL9B8N.svg"
+                alt=""
+                class="right"
+            /></a>
+            <a href="">
+              <img
+                src="reshot-icon-arrow-left-4NA6KJF8CU.svg"
+                alt=""
+                class="right"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var nav1 = document.getElementsByClassName("navs")[0];
+      nav1.addEventListener("click", function () {
+        alert("Menu Item is clicked");
+
+        nav1.setAttribute("style", "font-weight: bold; color: #19A7CE");
+      });
+
+      var nav2 = document.getElementsByClassName("navs")[1];
+      nav2.addEventListener("click", function () {
+        alert("Menu Item is clicked");
+
+        nav2.setAttribute("style", "font-weight: bold; color: #19A7CE");
+      });
+      var nav3 = document.getElementsByClassName("navs")[2];
+      nav3.addEventListener("click", function () {
+        alert("Menu Item is clicked");
+
+        nav3.setAttribute("style", "font-weight: bold; color: #19A7CE");
+      });
+
+      var nav4 = document.getElementsByClassName("navs")[3];
+      nav4.addEventListener("click", function () {
+        alert("Menu Item is clicked");
+        nav4.setAttribute("style", "font-weight: bold; color: #19A7CE");
+      });
+    </script>
+  </body>
+</html>

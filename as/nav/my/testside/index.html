@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Increment Counters</title>
+    <script>
+      var counts = [0, 0, 0, 0, 0];
+
+      function incrementCounter(index) {
+        counts[index]++;
+        document.getElementById("counter" + index).innerHTML = counts[index];
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Increment Counters</h1>
+    <p>Click the buttons below to increase the counts:</p>
+    <button onclick="incrementCounter(0)">
+      Counter 1: <span id="counter0">0</span>
+    </button>
+    <button onclick="incrementCounter(1)">
+      Counter 2: <span id="counter1">0</span>
+    </button>
+    <button onclick="incrementCounter(2)">
+      Counter 3: <span id="counter2">0</span>
+    </button>
+    <button onclick="incrementCounter(3)">
+      Counter 4: <span id="counter3">0</span>
+    </button>
+    <button onclick="incrementCounter(4)">
+      Counter 5: <span id="counter4">0</span>
+    </button>
+  </body>
+</html>

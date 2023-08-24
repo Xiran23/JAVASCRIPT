@@ -1,0 +1,21 @@
+.fcontainer {
+  display: flex;
+
+  border: 1px solid black;
+  height: 333px;
+  /* flex-direction: row-reverse; */
+  /* justify-content: center; */
+  /* justify-content: flex-end; */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.fitems {
+  background-color: red;
+  border: 1px solid;
+  border-color: blue;
+
+  margin: 10px;
+  width: 122px;
+  height: 122px;
+}

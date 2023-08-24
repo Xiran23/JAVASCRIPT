@@ -1,0 +1,38 @@
+javascript object notaion 
+
+light weight 
+readable 
+easy to read compare to xml 
+most use " " not '' 
+
+
+  has string 
+  number and boolean 
+  
+
+  myjson  = `{
+
+    "name" : "harry", 
+    "score" : 11.75,
+    "isAdmin" : false,
+    "licesnse" : null, 
+    "shopItem" : ["fooditems","Change","happy"],
+     "myobj" : {
+        "name" : "neseted",
+        "marks" : 34,
+           "shopItem2" : ["fooditems","Change","{"a":true}"]
+
+     }
+  }`;
+
+parsed
+
+  JSON.parsed(myJason);
+   parsed = JSON.parsed(myJason);
+
+
+  paresed["isAdmin];    
+paresed["shopItem"][2]; //prints happy 
+
+
+

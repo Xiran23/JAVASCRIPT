@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documednt</title>
+  </head>
+  <body>
+    <script>
+      let userleft = false;
+      let userWatchingcatmeme = false;
+
+      function Whatuserdoingcallback(callback, errorcallback) {
+        if (userleft) {
+          errorcallback({
+            name =`userleft`,
+            message=`:()`
+          })
+        } else if (userWatchingcatmeme) {
+          errorcallback({
+
+              name =`userwatcing cat meme`,
+                message=`:()-------------`
+          )
+        } else {
+          callback(`running`);
+        }
+
+        Whatuserdoingcallback(
+          (message) => {
+            console.log(`sucess` + message);
+          },
+          (error) => {
+            console.log(error.name + `  ` + error.message);
+          }
+        );
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+/* Reset styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Basic styles */
+body {
+	font-family: Arial, sans-serif;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	background-color: #292727;
+	color: #981717;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	
+}
+
+nav li {
+	margin: 0 10px;
+	
+}
+
+nav a {
+	color: #ffffff;
+	text-decoration: none;
+	
+}
+
+.search {
+	display: flex;
+	align-items: center;
+}
+
+.search input {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+}
+
+.search button {
+	padding: 10px;
+	background-color: #fff;
+	color: #222;
+	border: none;
+	border-radius: 5px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+main {
+	display: flex;
+}
+
+.slider {
+	flex: 1;
+	padding: 20px;
+	background-color: #ccc;
+}
+
+.sidebar {
+	flex: 1;
+	padding: 20px;
+	background-color: #eee;
+}
+
+h2 {
+	margin-bottom: 10px;
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 600px) {
+	header {
+		flex-direction: column;
+	}
+	.search {
+		margin-top: 20px;
+	}
+	main {
+		flex-direction: column;
+	}
+	.slider,
+	.sidebar {
+		flex: none;
+	}
+}
+.container{
+	
+	display: flex;
+	justify-content: space-around;
+	gap: 20px;
+	margin-inline: 40px;
+}
+.h{
+	margin: 40px;
+	text-align: center;
+	border: 4px solid rgb(54, 53, 53);
+	padding-top: 2px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.post img{
+	border: 2px solid rgb(63, 62, 62);
+	width: 320px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.post{
+
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+.post img.right{
+	width: 20px;
+	position: relative;
+	
+}
+.arrow{
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	bottom: -26%;
+	left: 8%;
+	right: 72%;
+	transform: rotateY(-15);
+}
+.row{
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	bottom: -26%;
+	left: 40%;
+	right: 40%;
+	transform: rotateY(-15);
+
+}
+.arr{
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	bottom: -26%;
+	left: 72%;
+	right: 8%;
+	transform: rotateY(-45);
+
+}
+.right{
+	position: absolute;
+	
+	
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const promiseobj1 = new Promise((resolve, reject) => {
+        let fileLoaded = false;
+        if (fileLoaded) {
+          resolve("File loded");
+        } else {
+          reject("file not loaded");
+        }
+      });
+      promiseobj1
+        .then((value) => console.log(value))
+        .catch((error) => console.log(error));
+
+      const obj2promise = new Promise((solve, notsolve) => {
+        let sum = 2 + 2;
+        if ((sum = 4)) {
+          solve("its 4");
+        } else {
+          notsolve("itsnotsolve");
+        }
+      });
+
+      obj2promise
+        .then((value) => console.log(value))
+        .catch((error) => console.log(error));
+    </script>
+  </body>
+</html>

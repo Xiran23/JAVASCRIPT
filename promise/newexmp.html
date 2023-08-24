@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const wait = new Promise((resolve) => {
+        setTimeout(resolve, 3000);
+      });
+      wait.then((solve) => console.log("THAnks for waiting"));
+      //try2
+      const wait2 = (time) =>
+        new Promise((resolve) => {
+          setTimeout(resolve, time);
+        });
+      wait2(4000).then((solve) => console.log("THAnks for waiting for 4 sec"));
+    </script>
+  </body>
+</html>

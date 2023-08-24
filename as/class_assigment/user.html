@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let CP = prompt("Enter the cost price");
+      let Sp = window.prompt("ENter the sell Price");
+
+      function checkProfit(cp, sp) {
+        let result = sp - cp;
+
+        if (result < 0) {
+          res = `user is on  loss  Rs${result}`;
+        } else {
+          res = `user is on  profit  Rs${result}`;
+        }
+        return res;
+      }
+
+      let result = checkProfit(CP, Sp);
+      console.log(result);
+      document.write(result);
+    </script>
+  </body>
+</html>
